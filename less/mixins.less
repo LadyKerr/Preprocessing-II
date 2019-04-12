@@ -1,9 +1,11 @@
 // Mixins in here
 
-.btn-mixin (@background-color: #228B22; @width:220px; @height: 40px;) {
+.btn-mixin (@background-color: #228B22; @width:200px; @height: 40px;) {
     display: block;
     background-color: @background-color;
     margin: 0 auto;
+    padding: 0;
+    display: inline-block;
     cursor: pointer;
     width: @width;
     height: @height;
@@ -15,4 +17,9 @@
 
 .btn {
     .btn-mixin;
+
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+    }
 }

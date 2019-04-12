@@ -3,6 +3,12 @@
     nav {
     justify-content: space-around;
     align-self: center;
+
+    @media @mobile {
+        width: 80%
+        flex-direction: column;
+        align-items: center;
+    }
     
         a {
             text-decoration: none;
@@ -14,6 +20,13 @@
         &:hover {
             text-decoration: underline;
             color: @shark;
+        }
+
+         @media @mobile {
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin: 0;
+            }
         }
     } //a ends
 } //nav ends
