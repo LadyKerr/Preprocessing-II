@@ -1,1 +1,18 @@
 // Mixins in here
+
+.btn-mixin (@background-color: #228B22; @width:220px; @height: 40px;) {
+    display: block;
+    background-color: @background-color;
+    margin: 0 auto;
+    cursor: pointer;
+    width: @width;
+    height: @height;
+    border-radius: 10px;
+    font-size: 2rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.btn {
+    .btn-mixin;
+}
