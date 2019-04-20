@@ -1,1 +1,34 @@
 // Navigation Styles here
+
+    nav {
+        margin-left: auto;
+        justify-content: space-around;
+        align-self: center;
+
+    @media @mobile {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;   
+    }
+    
+        a {
+            text-decoration: none;
+            color: @shark;
+            font-size: 1.6rem;
+            margin: 20px;
+            
+        
+        &:hover {
+            text-decoration: underline;
+            color: @shark;
+        }
+
+         @media @mobile {
+            flex-direction: column;
+            flex-wrap: wrap;
+            }
+        }
+} //nav ends
